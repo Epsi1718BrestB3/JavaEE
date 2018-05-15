@@ -1,23 +1,23 @@
 package fr.epsi.b3.controller;
 
-public class ControllerImpl implements Controller{
+public class ControllerImpl implements Controller {
 
 	@Override
-	public Object afficherScore() {
+	public String afficherScore() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Object afficherResultat() {
+	public String afficherResultat() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Object getClickGrille() {
+	public boolean lancer(int zoneCiblee) {
 		// TODO Auto-generated method stub
-		return null;
+		return false;
 	}
 
 	
