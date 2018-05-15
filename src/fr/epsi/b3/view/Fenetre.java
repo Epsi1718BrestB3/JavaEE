@@ -46,11 +46,11 @@ public class Fenetre extends JFrame {
 	    
 	    //
 	    final Panneau panneauBleu = factory.creer(Color.BLUE);
-	    final Panneau panneauVert = factory.creer(Color.GREEN);
-	    final Panneau panneauRouge = factory.creer(Color.RED);
-	    final Panneau panneauBlanc = factory.creer(Color.WHITE);
-	    final Panneau panneauBleuClair = factory.creer(Color.CYAN);
-	    final Panneau panneauMagenta = factory.creer(Color.MAGENTA);
+	    final Panneau panneauVert = factory.creer(Color.BLUE);
+	    final Panneau panneauRouge = factory.creer(Color.BLUE);
+	    final Panneau panneauBlanc = factory.creer(Color.BLUE);
+	    final Panneau panneauBleuClair = factory.creer(Color.BLUE);
+	    final Panneau panneauMagenta = factory.creer(Color.BLUE);
 
 	    //
 	    conteneurDePanneaux.setPreferredSize(new Dimension(300, 200));

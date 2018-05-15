@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 public class Panneau extends JButton { 
 
@@ -17,11 +18,11 @@ public class Panneau extends JButton {
 		this.color = color;
 		this.x = x;
 		this.y = y;
+		
 		this.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO
+				JOptionPane.showMessageDialog(null, "test");
 			}
 		});
 	}
@@ -35,6 +36,5 @@ public class Panneau extends JButton {
 	    g.setColor(this.color);
 	    g.fillRect(this.x, this.y, 100, 100);
 
-	  }               
-
-	}
+	}               
+}
