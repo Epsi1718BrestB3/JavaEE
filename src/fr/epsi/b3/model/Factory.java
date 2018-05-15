@@ -1,4 +1,4 @@
-package fr.epsi.b3;
+package fr.epsi.b3.model;
 
 import java.awt.Color;
 
