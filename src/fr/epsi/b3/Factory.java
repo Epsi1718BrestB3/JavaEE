@@ -4,6 +4,6 @@ import java.awt.Color;
 
 public interface Factory<T> {
 
-	public T creer(Color couleur0);
+	public T creer(Color couleur);
 	
 }
