@@ -9,6 +9,7 @@ public class Main {
 		Fenetre fen = new Fenetre();
 		fen.setVisible(true);
 		//test
+		// Test Damien
 
 	}       
 
