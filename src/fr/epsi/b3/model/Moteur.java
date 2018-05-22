@@ -1,4 +1,6 @@
 package fr.epsi.b3.model;
+import java.util.Observable;
+
 
 public class Moteur {
 	
@@ -15,12 +17,15 @@ public class Moteur {
 		
 		// Initialisation score
 		this.score = new Score();
+		this.score.setPersonneA(attaquant);
+		this.score.setPersonneB(gardien);
+		//this.score.miseAZero();
 		
 		// TODO
 	}
 	
 	/**
-	 * réinitialiser les posistions protégées
+	 * réinitialiser les positions protégées
 	 * par le gardien
 	 */
 	public void nouvelEssai() {
