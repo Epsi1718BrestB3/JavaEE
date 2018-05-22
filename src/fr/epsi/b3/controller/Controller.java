@@ -1,7 +1,9 @@
 package fr.epsi.b3.controller;
 
-public interface Controller<T> {
-	public T afficherScore();
-	public T afficherResultat();
-	public T getClickGrille();
+import fr.epsi.b3.model.Score;
+
+public interface Controller {
+	public Score recupererScore();
+	public String genererMessage();
+	public boolean lancer(int zoneCiblee);
 }
