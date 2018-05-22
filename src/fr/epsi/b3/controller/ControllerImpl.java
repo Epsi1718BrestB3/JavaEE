@@ -1,23 +1,31 @@
 package fr.epsi.b3.controller;
 
-public class ControllerImpl implements Controller {
+import fr.epsi.b3.model.Moteur;
+import fr.epsi.b3.model.Score;
 
+public class ControllerImpl implements Controller {
+	private Moteur moteur;
+	 public ControllerImpl (){
+		 moteur = new Moteur();
+	 }
+	
 	@Override
-	public String afficherScore() {
-		// TODO Auto-generated method stub
-		return null;
+	public Score recupererScore() {
+		return moteur.getScore();
 	}
 
 	@Override
-	public String afficherResultat() {
-		// TODO Auto-generated method stub
+	public String genererMessage() {
+		String message = null;
+		
 		return null;
 	}
 
 	@Override
 	public boolean lancer(int zoneCiblee) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return moteur.lancer(zoneCiblee);
+
 	}
 
 	
