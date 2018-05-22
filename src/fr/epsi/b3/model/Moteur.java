@@ -34,6 +34,8 @@ public class Moteur {
 	
 	/**
 	 * 
+	 * True : but
+	 * False : pas but
 	 */
 	public boolean lancer(int zoneVisee) {
 		int[] tableauZonesGardees = new int[3];
@@ -46,12 +48,12 @@ public class Moteur {
 			|| zoneVisee == tableauZonesGardees[2]) {
 			
 			score.incrementeScoreA();
-			return true;
+			return false;
 			
 		} else {
 			
 			score.incrementeScoreB();
-			return false;
+			return true;
 			
 		}
 	}
